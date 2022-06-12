@@ -46,7 +46,7 @@ create table medico (
 	fecha date not null,
 	consultorio_id int,
 	CONSTRAINT pk_medico PRIMARY KEY(id),
-   CONSTRAINT fk_medico_consultorio FOREIGN KEY(consultorio_id) REFERENCES consultorio(id)
+    CONSTRAINT fk_medico_consultorio FOREIGN KEY(consultorio_id) REFERENCES consultorio(id)
 )ENGINE=InnoDb;
 
 create table cita(
@@ -60,7 +60,7 @@ create table cita(
 	fecha date not null,
 	reservacion date not null,
 	CONSTRAINT pk_cita PRIMARY KEY(id),
-   CONSTRAINT fk_cita_usuario FOREIGN KEY(usuario_id) REFERENCES usuario(id),
-   CONSTRAINT fk_cita_paciente FOREIGN KEY(paciente_id) REFERENCES paciente(id),
-   CONSTRAINT fk_cita_medico FOREIGN KEY(medico_id) REFERENCES medico(id)
+    CONSTRAINT fk_cita_usuario FOREIGN KEY(usuario_id) REFERENCES usuario(id),
+    CONSTRAINT fk_cita_paciente FOREIGN KEY(paciente_id) REFERENCES paciente(id),
+    CONSTRAINT fk_cita_medico FOREIGN KEY(medico_id) REFERENCES medico(id)
 )ENGINE=InnoDb;

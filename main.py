@@ -1,4 +1,4 @@
-print(f"\nNombre: Gilberto Angel de Jesus Suarez\nGrupo: 9 A\nMateria: Desarrollo para dispositivos inteligentes\nFecha: 27/05/2022\n")
+print(f"\nNombre: Gilberto Angel de Jesus Suarez\nGrupo: 9 A\nMateria: Desarrollo para dispositivos inteligentes\nFecha: 12/06/2022\n")
 """
 Proyecto python + MySQL:
 1. Abrir el asistente
