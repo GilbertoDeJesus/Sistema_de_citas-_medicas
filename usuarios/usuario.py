@@ -19,7 +19,7 @@ class Usuario:
         passw = hashlib.sha256()
         passw.update(self.password.encode('utf8'))
         
-        sql = "INSERT INTO usuario VALUES(null, %s, %s, %s, %s, %s, NOW())"
+        sql = "INSERT INTO usuario VALUES(null, %s, %s, %s, %s, NOW())"
         usuario = (self.nombre, self.apellidos, self.email, passw.hexdigest())
 
         try:
